@@ -1,14 +1,15 @@
 public class calculateArea
 {
-    public static double calculateArea(double sideLength, int numberOfSides)
+    public static double calculateArea(double sideLength, int sides)
     {
-        if (sideLength <= 0 || numberOfSides < 3)
+        if (sideLength <= 0 || sides < 3)
         {
-            throw new IllegalArgumentException("Invalid input : Enter positive sideLength and numberOfsides must be atleast 3.");
+            throw new IllegalArgumentException("Invalid input : Enter positive sideLength and sides must be atleast 3.");
         }
-    
-        double apothem = sideLength / (2 * Math.tan(Math.PI / numberOfSides));
-        double perimeter = calculatePerimeter.calculatePerimeter(sideLength, numberOfSides);
+     
+        double perimeter = CalculatePerimeter.calculatePerimeter(sideLength, sides);
+
+        double apothem = sideLength / (2 * Math.tan(Math.PI / sides));  
         return (perimeter * apothem) / 2;
     }
 }
