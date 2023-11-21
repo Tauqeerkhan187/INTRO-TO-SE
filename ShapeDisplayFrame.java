@@ -1,11 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class shapeDisplayFrame extends JFrame
+public class ShapeDisplayFrame extends JFrame
 {
     private JLabel imageLabel;
     
-    public shapeDisplayFrame()
+    public ShapeDisplayFrame()
     {
         setTitle("Shape Display");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
