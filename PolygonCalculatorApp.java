@@ -17,7 +17,7 @@ public class PolygonCalculatorApp
             System.out.println("The shape is: " + shape);
             
             // Display Shape Image
-            System.out.println("Do you wan to see an image of the shape? (Yes/No)");
+            System.out.println("Do you want to see an image of the shape? (Yes/No)");
             String response = scanner.nextLine();
             if ("yes".equalsIgnoreCase(response) && !"Unknown".equals(shape))
             {
