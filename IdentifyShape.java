@@ -1,4 +1,4 @@
-public class identifyShape
+public class IdentifyShape
 {
     public static String identifyShape(int sides)
     {

@@ -1,4 +1,4 @@
-public class calculateArea
+public class CalculateArea
 {
     public static double calculateArea(double sideLength, int numberOfSides)
     {
