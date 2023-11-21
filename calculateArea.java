@@ -21,8 +21,23 @@ public class calculateArea
                 throw new IllegalArgumentException("Invalid number of sides");
 
         }
-        return area;
-    }
+        
+        public static String compareAreaToHandSize(double area)
+        {
+            if (area >= 70.5 && area <= 90.5)
+            {
+              return " The area is the size of a child's hand.";
+            }
+            else if (area < 70.5)
+            {
+                return "The area is smaller than a child's hand.";
+            }
+            else
+            {
+                return "The area is larger than a child's hand.";
+            }
+
+        }
                             
 }
     
