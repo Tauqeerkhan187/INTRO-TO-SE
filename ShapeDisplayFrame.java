@@ -18,7 +18,19 @@ public class ShapeDisplayFrame extends JFrame
 
     public void displayShapeImage(String shapeName)
     {
-        ImageIcon icon = new ImageIcon("ISEimages/" + shapeName.toLowerCase() + ".png");
+      String imagePath = "ISEimages/" + shapeName.toLowerCase() + ".png";
+      ImageIcon icon = new ImageIcon(imagePath);
+
+      Image image = icon.getImage();
+      Image resizedImage = image.getScaledInstance(200, 200, Image.SCALE_SMOOTH);
+      icon = new ImageIcon(resizedImage);
+
+      if (icon.getImageLoadStatus() != MediaTracker.COMPLETE)
+      {
+        System.out.println("Error loading image: " + icon);
+        return;
+      }
+
         imageLabel.setIcon(icon);
         // Resize frame to fit image.
         pack();

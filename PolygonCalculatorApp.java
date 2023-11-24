@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class PolygonCalculatorApp
 {
+    private static final double SMALL_HAND_SIZE = 70.5;
+    private static final double LARGE_HAND_SIZE = 90.5;
+
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
@@ -35,6 +38,11 @@ public class PolygonCalculatorApp
             double area = CalculateArea.calculateArea(sideLength, sides);
             System.out.println("The area of the shape is: " + area);
 
+            //Compare with hand size
+            
+            String sizeComparison = compareAreaWithHandSize(area);
+            System.out.println(sizeComparison);
+
         }
 
         catch (IllegalArgumentException e)
@@ -50,7 +58,24 @@ public class PolygonCalculatorApp
             scanner.close();
         }
     }
-}            
+    
+    private static String compareAreaWithHandSize(double area)
+    {
+        if (area >= SMALL_HAND_SIZE && area <= LARGE_HAND_SIZE)
+        {
+            return "The area is close to the size of a child's hand.";
+        }
+        else if (area < SMALL_HAND_SIZE)
+        {
+            return "The area is smaller than a child's hand size.";
+        }
+        else
+        {
+            return  "The area is larger than a child's hand size.";
+        }
+    }
+}
+         
 
             
 
