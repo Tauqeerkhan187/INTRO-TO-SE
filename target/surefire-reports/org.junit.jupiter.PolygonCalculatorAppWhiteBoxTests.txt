@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.294 s <<< FAILURE! - in org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests
+testAreaCalculationWithInvalidInput  Time elapsed: 0.109 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests.testAreaCalculationWithInvalidInput(PolygonCalculatorAppWhiteBoxTests.java:32)
+
+testHandSizeComparisonWithinRange  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <The area is smaller than a child's hand size.> but was: <The area is close to the size of a child's hand.>
+	at org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests.testHandSizeComparisonWithinRange(PolygonCalculatorAppWhiteBoxTests.java:38)
+

@@ -1,3 +1,5 @@
+package org.junit.jupiter;
+
 import javax.swing.*;
 import java.awt.*;
 

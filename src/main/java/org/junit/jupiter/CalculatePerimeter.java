@@ -1,3 +1,5 @@
+package org.junit.jupiter;
+
 public class CalculatePerimeter
 {
     public static double calculatePerimeter(double sideLength, int numberOfSides)

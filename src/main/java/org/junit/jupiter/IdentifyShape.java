@@ -1,3 +1,5 @@
+package org.junit.jupiter;
+
 public class IdentifyShape
 {
     public static String identifyShape(int sides)

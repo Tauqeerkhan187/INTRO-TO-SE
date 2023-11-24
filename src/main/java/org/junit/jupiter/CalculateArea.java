@@ -1,3 +1,5 @@
+package org.junit.jupiter;
+
 public class CalculateArea
 {
     public static double calculateArea(double sideLength, int numberOfSides)

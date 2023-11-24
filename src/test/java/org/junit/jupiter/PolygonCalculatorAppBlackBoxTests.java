@@ -1,13 +1,14 @@
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import org.junit.Test;
+package org.junit.jupiter;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PolygonCalculatorAppBlackBoxTests
 {
     @Test
     public void testIdentifyTriangle()
     {
-        assertEquals("Triangle",IdentifyShape.identifyShape(3));
+        assertEquals("Triangle", IdentifyShape.identifyShape(3));
     }
 
     @Test
@@ -32,7 +33,8 @@ public class PolygonCalculatorAppBlackBoxTests
     @Test
     public void testHandSizeComparisonBelowRange()
     {
-        String result = PolygonCalculatorApp.compareAreaWithHandSize(70.0);        assertEquals("The area is smaller than a child's hand size.", result);
+        String result = PolygonCalculatorApp.compareAreaWithHandSize(70.0);
+        assertEquals("The area is smaller than a child's hand size.", result);
     }
 
     @Test
@@ -42,4 +44,4 @@ public class PolygonCalculatorAppBlackBoxTests
         assertEquals("The area is larger than a child's hand size.", result);
     }
 }
-    
+

@@ -1,3 +1,5 @@
+package org.junit.jupiter;
+
 import java.util.Scanner;
 
 public class PolygonCalculatorApp
@@ -59,7 +61,7 @@ public class PolygonCalculatorApp
         }
     }
     
-    private static String compareAreaWithHandSize(double area)
+    public static String compareAreaWithHandSize(double area)
     {
         if (area >= SMALL_HAND_SIZE && area <= LARGE_HAND_SIZE)
         {
