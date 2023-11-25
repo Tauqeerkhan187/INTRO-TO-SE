@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="1.274" tests="8" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.439" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/surefire/surefirebooter11421781799948758595.jar /home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/surefire 2023-11-25T15-59-39_929-jvmRun1 surefire11682630991253490982tmp surefire_016177497356716768530tmp"/>
+    <property name="sun.java.command" value="/home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/surefire/surefirebooter16201450496084560077.jar /home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/surefire 2023-11-25T18-46-17_632-jvmRun1 surefire6644248235685170096tmp surefire_014513281959097322809tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/test-classes:/home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/classes:/home/tk187/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/home/tk187/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/tk187/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/home/tk187/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/tk187/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/home/tk187/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/surefire/surefirebooter11421781799948758595.jar"/>
+    <property name="surefire.real.class.path" value="/home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/surefire/surefirebooter16201450496084560077.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8.1+1-Ubuntu-0ubuntu122.04"/>
     <property name="user.name" value="tk187"/>
@@ -51,30 +51,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAreaCalculationWithInvalidInput" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.161">
-    <failure message="Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
-	at org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests.testAreaCalculationWithInvalidInput(PolygonCalculatorAppWhiteBoxTests.java:32)
-</failure>
-    <system-out><![CDATA[
- +-------------------------------------------------------------------------------+
- | WARNING:                                                                      |
- | The junit-platform-surefire-provider has been deprecated and is scheduled to  |
- | be removed in JUnit Platform 1.4. Please use the built-in support in Maven    |
- | Surefire >= 2.22.0 instead.                                                   |
- | » https://junit.org/junit5/docs/current/user-guide/#running-tests-build-maven |
- +-------------------------------------------------------------------------------+
-
-]]></system-out>
-  </testcase>
-  <testcase name="testAreaCalculationTriangle" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.327"/>
-  <testcase name="testIdentifyNonTriangle" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.002"/>
-  <testcase name="testHandSizeComparisonWithinRange" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.006">
-    <failure message="expected: &lt;The area is smaller than a child&apos;s hand size.&gt; but was: &lt;The area is close to the size of a child&apos;s hand.&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <The area is smaller than a child's hand size.> but was: <The area is close to the size of a child's hand.>
-	at org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests.testHandSizeComparisonWithinRange(PolygonCalculatorAppWhiteBoxTests.java:38)
-]]></failure>
-  </testcase>
-  <testcase name="testIdentifyTriangle" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.011"/>
-  <testcase name="testHandSizeComparisonAboveRange" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.004"/>
-  <testcase name="testPerimeterCalculationTriangle" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.003"/>
+  <testcase name="testAreaCalculationWithInvalidInput" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.129"/>
+  <testcase name="testAreaCalculationTriangle" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.015"/>
+  <testcase name="testIdentifyNonTriangle" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.003"/>
+  <testcase name="testHandSizeComparisonWithinRange" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.002"/>
+  <testcase name="testIdentifyTriangle" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.005"/>
+  <testcase name="testHandSizeComparisonAboveRange" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.013"/>
+  <testcase name="testPerimeterCalculationTriangle" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0"/>
   <testcase name="testHandSizeComparisonBelowRange" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.001"/>
 </testsuite>

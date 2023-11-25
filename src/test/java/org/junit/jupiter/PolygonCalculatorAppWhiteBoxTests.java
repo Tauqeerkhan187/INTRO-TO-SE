@@ -4,48 +4,65 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
-public class PolygonCalculatorAppWhiteBoxTests {
+public class PolygonCalculatorAppWhiteBoxTests 
+{
 
     @Test
-    public void testIdentifyTriangle() {
+    public void testIdentifyTriangle() 
+    {
         assertEquals("Triangle", IdentifyShape.identifyShape(3));
     }
 
     @Test
-    public void testIdentifyNonTriangle() {
+    public void testIdentifyNonTriangle() 
+    {
         assertEquals("Unknown", IdentifyShape.identifyShape(10));
     }
 
     @Test
-    public void testPerimeterCalculationTriangle() {
+    public void testPerimeterCalculationTriangle() 
+    {
         assertEquals(15.0, CalculatePerimeter.calculatePerimeter(5.0, 3), 0.001);
     }
 
     @Test
-    public void testAreaCalculationTriangle() {
-        assertEquals(10.825, CalculateArea.calculateArea(5.0, 3), 0.001);
+    public void testAreaCalculationTriangle() 
+    {
+        double sideLength = 5.0;
+        double expectedArea = (Math.sqrt(3) / 4) * Math.pow(sideLength, 2);
+        assertEquals(expectedArea, CalculateArea.calculateArea(sideLength,3), 0.001);
     }
 
     @Test
-    public void testAreaCalculationWithInvalidInput() {
-        Executable executable = () -> CalculateArea.calculateArea(-1.0, 3);
-        assertThrows(IllegalArgumentException.class, executable);
+    public void testAreaCalculationWithInvalidInput() 
+    {
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> 
+        {
+            CalculateArea.calculateArea(-1.0, 3);
+        });
+        
+        assertNotNull(exception);
     }
 
     @Test
-    public void testHandSizeComparisonWithinRange() {
-        String result = PolygonCalculatorApp.compareAreaWithHandSize(80.0);
-        assertEquals("The area is smaller than a child's hand size.", result);
+    public void testHandSizeComparisonWithinRange() 
+    {
+        double area = 80.0; //assuming this is within the range of a child's hand
+        String expectedMessage = "The area is close to the size of a child's hand.";
+        assertEquals(expectedMessage, PolygonCalculatorApp.compareAreaWithHandSize(area));
+
     }
 
     @Test
-    public void testHandSizeComparisonBelowRange() {
+    public void testHandSizeComparisonBelowRange() 
+    {
         String result = PolygonCalculatorApp.compareAreaWithHandSize(70.0);
         assertEquals("The area is smaller than a child's hand size.", result);
     }
 
     @Test
-    public void testHandSizeComparisonAboveRange() {
+    public void testHandSizeComparisonAboveRange() 
+    {
         String result = PolygonCalculatorApp.compareAreaWithHandSize(95.0);
         assertEquals("The area is larger than a child's hand size.", result);
     }
