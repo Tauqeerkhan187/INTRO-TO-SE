@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.junit.jupiter.PolygonCalculatorAppBlackBoxTests" time="0.003" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.junit.jupiter.PolygonCalculatorAppBlackBoxTests" time="0.004" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/surefire/surefirebooter8898335140010713424.jar /home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/surefire 2023-11-25T01-06-26_969-jvmRun1 surefire15246154814469642173tmp surefire_01198397418447976411tmp"/>
+    <property name="sun.java.command" value="/home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/surefire/surefirebooter11421781799948758595.jar /home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/surefire 2023-11-25T15-59-39_929-jvmRun1 surefire11682630991253490982tmp surefire_016177497356716768530tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/test-classes:/home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/classes:/home/tk187/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/home/tk187/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/tk187/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/home/tk187/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/tk187/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/home/tk187/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/surefire/surefirebooter8898335140010713424.jar"/>
+    <property name="surefire.real.class.path" value="/home/tk187/ISAD/KHAN_TAUQEER_21464001_Code/target/surefire/surefirebooter11421781799948758595.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8.1+1-Ubuntu-0ubuntu122.04"/>
     <property name="user.name" value="tk187"/>
@@ -52,9 +52,9 @@
     <property name="java.class.version" value="61.0"/>
   </properties>
   <testcase name="testAreaCalculation" classname="org.junit.jupiter.PolygonCalculatorAppBlackBoxTests" time="0"/>
-  <testcase name="testHandsizeComparisonAboveRange" classname="org.junit.jupiter.PolygonCalculatorAppBlackBoxTests" time="0.001"/>
+  <testcase name="testHandsizeComparisonAboveRange" classname="org.junit.jupiter.PolygonCalculatorAppBlackBoxTests" time="0"/>
   <testcase name="testPerimeterCalculation" classname="org.junit.jupiter.PolygonCalculatorAppBlackBoxTests" time="0"/>
   <testcase name="testHandSizeComparisonWithinRange" classname="org.junit.jupiter.PolygonCalculatorAppBlackBoxTests" time="0"/>
   <testcase name="testIdentifyTriangle" classname="org.junit.jupiter.PolygonCalculatorAppBlackBoxTests" time="0"/>
-  <testcase name="testHandSizeComparisonBelowRange" classname="org.junit.jupiter.PolygonCalculatorAppBlackBoxTests" time="0"/>
+  <testcase name="testHandSizeComparisonBelowRange" classname="org.junit.jupiter.PolygonCalculatorAppBlackBoxTests" time="0.001"/>
 </testsuite>
