@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.282" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.junit.jupiter.IdentifyShapeBlackBoxTest" time="0.033" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -51,12 +51,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAreaCalculationWithInvalidInput" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.081"/>
-  <testcase name="testAreaCalculationTriangle" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.005"/>
-  <testcase name="testIdentifyNonTriangle" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.002"/>
-  <testcase name="testHandSizeComparisonWithinRange" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.002"/>
-  <testcase name="testIdentifyTriangle" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.002"/>
-  <testcase name="testHandSizeComparisonAboveRange" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.003"/>
-  <testcase name="testPerimeterCalculationTriangle" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.004"/>
-  <testcase name="testHandSizeComparisonBelowRange" classname="org.junit.jupiter.PolygonCalculatorAppWhiteBoxTests" time="0.001"/>
+  <testcase name="testIdentifyUnknownShape" classname="org.junit.jupiter.IdentifyShapeBlackBoxTest" time="0"/>
+  <testcase name="testIdentifyHeptagon" classname="org.junit.jupiter.IdentifyShapeBlackBoxTest" time="0"/>
+  <testcase name="testIdentifyHexagon" classname="org.junit.jupiter.IdentifyShapeBlackBoxTest" time="0"/>
+  <testcase name="testIdentifyUnknownShapeNegative" classname="org.junit.jupiter.IdentifyShapeBlackBoxTest" time="0.002"/>
+  <testcase name="testIdentifySquare" classname="org.junit.jupiter.IdentifyShapeBlackBoxTest" time="0.001"/>
+  <testcase name="testIdentifyPentagon" classname="org.junit.jupiter.IdentifyShapeBlackBoxTest" time="0.001"/>
+  <testcase name="testIdentifyTriangle" classname="org.junit.jupiter.IdentifyShapeBlackBoxTest" time="0.001"/>
 </testsuite>
