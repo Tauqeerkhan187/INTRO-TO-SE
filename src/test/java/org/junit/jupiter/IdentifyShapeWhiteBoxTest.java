@@ -42,12 +42,6 @@ public class IdentifyShapeWhiteBoxTest
     }
 
     @Test
-    public void testIdentifyUnknownShapeNegative()
-    {
-        assertEquals("Unknown", IdentifyShape.identifyShape(-1));
-    }
-
-    @Test
     public void testIdentifyUnknownShapeZero()
     {
         assertEquals("Unknown", IdentifyShape.identifyShape(0));

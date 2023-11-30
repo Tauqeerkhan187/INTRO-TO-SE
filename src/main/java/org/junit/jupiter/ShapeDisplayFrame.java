@@ -2,11 +2,12 @@ package org.junit.jupiter;
 
 import javax.swing.*;
 import java.awt.*;
+import java.net.URL;
 
 public class ShapeDisplayFrame extends JFrame
 {
     private JLabel imageLabel;
-    
+
     public ShapeDisplayFrame()
     {
         setTitle("Shape Display");
@@ -20,18 +21,25 @@ public class ShapeDisplayFrame extends JFrame
 
     public void displayShapeImage(String shapeName)
     {
-      String imagePath = "ISEimages/" + shapeName.toLowerCase() + ".png";
-      ImageIcon icon = new ImageIcon(imagePath);
+        String imagePath = "ISEimages/" + shapeName.toLowerCase() + ".png";
+        URL imageUrl = getClass().getResource(imagePath);
 
-      Image image = icon.getImage();
-      Image resizedImage = image.getScaledInstance(200, 200, Image.SCALE_SMOOTH);
-      icon = new ImageIcon(resizedImage);
+        if (imageUrl == null)
+        {
+            System.out.println("Failed to load image from path: " + imagePath);
+            return;
+        }
 
-      if (icon.getImageLoadStatus() != MediaTracker.COMPLETE)
-      {
-        System.out.println("Error loading image: " + icon);
-        return;
-      }
+        ImageIcon icon = new ImageIcon(imageUrl);
+        Image image = icon.getImage();
+        Image resizedImage = image.getScaledInstance(200, 200, Image.SCALE_SMOOTH);
+        icon = new ImageIcon(resizedImage);
+
+        if (icon.getImageLoadStatus() != MediaTracker.COMPLETE)
+        {
+            System.out.println("Error loading image: " + icon);
+            return;
+        }
 
         imageLabel.setIcon(icon);
         // Resize frame to fit image.

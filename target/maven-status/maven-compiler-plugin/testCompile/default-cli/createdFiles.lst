@@ -1,0 +1,4 @@
+org/junit/jupiter/IdentifyShapeWhiteBoxTest.class
+org/junit/jupiter/PolygonCalculatorAppBlackBoxTests.class
+org/junit/jupiter/IdentifyShapeBlackBoxTest.class
+org/junit/jupiter/PolygonCalculatorAppWhiteBoxTests.class
